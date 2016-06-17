@@ -1,0 +1,68 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        link(rel="stylesheet", href="./style.css")
+        style.
+            html, body{
+                margin: 0;
+                padding: 0;
+            }
+            body>section{
+                margin: 20px;
+                border: #999 solid 1px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+    body
+        h1 按钮
+        section
+            include ./components/button/index.pug
+        h1 分类项目
+        section
+            include ./components/catItem/index.pug
+        h1 内容
+        section
+            include ./components/content/index.pug
+        h1 表单
+        section
+            include ./components/form/index.pug
+        h1 图标
+        section
+            include ./components/icon/index.pug
+        h1 链接
+        section
+            include ./components/link/index.pug
+        h1 列表
+        section
+            include ./components/list/index.pug
+        h1 分类菜单
+        section
+            include ./components/menu/catMenu.pug
+        h1 菜单
+        section
+            include ./components/menu/index.pug
+        h1 模态弹窗
+        section
+            include ./components/modal/index.pug
+        h1 导航
+        section
+            include ./components/nav/index.pug
+        h1 分页
+        section
+            include ./components/pager/index.pug
+        h1 表格
+        section
+            include ./components/table/index.pug
+        h1 标题
+        section
+            include ./components/title/index.pug
+        h1 页面-分类列表
+        section(style="height:1000px")
+            include ./components/page/category.pug
+        h1 页面-分类详情
+        section(style="height:1000px")
+            include ./components/page/categoryDetail.pug
+        h1 页面-内容库
+        section(style="height:1000px")
+            include ./components/page/content.pug

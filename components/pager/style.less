@@ -1,0 +1,32 @@
+.pager {
+    &:after {
+        content: ' ';
+        display: table;
+        clear: both;
+    }
+    &>a {
+        display: block;
+        cursor: pointer;
+        float: left;
+        padding: 0 10px;
+        line-height: 30px;
+        border: @PAGER_BD solid 1px;
+        background-color: @PAGER_BG;
+        color: @PAGER_FC;
+
+        &.cur {
+            color: #000;
+            background-color: @PAGER_ACTIVE_BG;
+            cursor: default;
+        }
+        &:hover {
+            background-color: @PAGER_HOVER_BG;
+        }
+        &:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+        &:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+    }
+}

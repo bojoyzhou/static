@@ -1,0 +1,38 @@
+.form{
+    .inline{
+        padding: 10px 0;
+        box-sizing: border-box;
+        label{
+            line-height: 40px;
+        }
+        .filed{
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 7px;
+            border: @FIELD_BD solid 1px;
+            outline: none;
+            font-size: 14px;
+            &[disabled]{
+                background: @FIELD_DISABLED_BG;
+                border: 0;
+            }
+        }
+        input[type="text"], input[type="search"]{
+            height: 40px;
+            line-height: 40px;
+        }
+        textarea.filed{
+            padding-top: 7px;
+            min-height: 150px;
+            resize: none;
+        }
+        &:after {
+            display: table;
+            content: " ";
+            clear: both;
+        }
+    }
+}
+fieldset{
+    border: @FIELDSET_BD solid 1px;
+}

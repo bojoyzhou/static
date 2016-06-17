@@ -1,0 +1,39 @@
+.btn{
+    border: none;
+    padding: 8px 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: @BTN_FOR;
+    background: @BTN_BG;
+    border: @BTN_BD solid 1px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    &.btn-light{
+        border-radius: 16px;
+        color: @BTN_LIGHT_FOR;
+        background: transparent;
+        border: @BTN_LIGHT_BD solid 1px;
+        &.active, &:hover{
+            color: @BTN_LIGHT_ACTIVE_FOR;
+            background: @BTN_LIGHT_ACTIVE_BG;
+        }
+    }
+    &.btn-box{
+        border-radius: 0
+    }
+    &.btn-cancel{
+        color: @BTN_CANCEL_FOR;
+        background: @BTN_CANCEL_BG;
+        border: @BTN_CANCEL_BD solid 1px;
+    }
+    &.btn-primary{
+        color: @BTN_PRIMARY_FOR;
+        background: @BTN_PRIMARY_BG;
+        border: 0;
+    }
+    &.btn-block{
+        display: block;
+        width: 100%;
+    }
+}

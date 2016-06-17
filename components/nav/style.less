@@ -1,0 +1,50 @@
+.nav {
+    background-color: #333;
+    color: #fff;
+    position: relative;
+
+    .logo {
+        float: left;
+        width: 200px;
+        height: 60px;
+    }
+    .list-group {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 240px;
+
+        &:after {
+            display: table;
+            content: " ";
+            clear: both;
+        }
+    }
+    .list-group-item {
+        cursor: pointer;
+        float: left;
+        height: 60px;
+        text-align: center;
+        width: 80px;
+        padding: 0;
+
+        .desc {
+            display: none;
+        }
+        .icon {
+            height: 100%;
+            width: 100%;
+        }
+        &.active, &:hover {
+            background: @NAV_ACTIVE_BG;
+
+            .desc {
+                display: block;
+            }
+            .icon {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}

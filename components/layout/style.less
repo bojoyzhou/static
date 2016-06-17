@@ -1,0 +1,19 @@
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.pos-r{
+    position: relative;
+}
+.pos-a{
+    position: absolute;
+}
+.clear{
+    &:after{
+        display: table;
+        content: ' ';
+        clear: both;
+    }
+}
