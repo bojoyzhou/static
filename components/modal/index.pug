@@ -127,9 +127,11 @@ script(type="text/javascript").
     window.onload = function(){
         var modals = [].slice.call(document.querySelectorAll('[modal]'))
         modals.map(function(btn){
-            btn.addEventListener('click', function(){
+            btn.addEventListener('click', function(e){
                 var name = this.getAttribute('modal')
                 document.querySelector('[modal-'+name+']').style.display='block'
+                e.stopPropagation()
+                return false;
             })
         })
 

@@ -2,8 +2,22 @@ div.form
     div.inline
         label.col-2 用户名
         div.col-10
-            input.filed(type="text")
+            input.field(type="text", disabled="true", value="这是一个禁用的控件")
+    div.inline
+        label.col-2 用户名
+        div.col-10
+            input.field(type="text")
     div.inline
         label.col-2 用户资料
         div.col-10
-            textarea.filed
+            textarea.field
+    div.clear
+        div.col-5
+            div
+                label 用户资料
+            div
+                input.field(type="text")
+            div
+                label 用户资料
+            div
+                textarea.field

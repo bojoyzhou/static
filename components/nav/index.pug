@@ -2,17 +2,32 @@ nav.nav
     .logo
     ul.list-group
         li.list-group-item.active
-            .icon.ico-editor
-            .desc
-                i
-                span 编辑器
+            a.link-wrapper(href="")
+                .icon.ico-editor
+                .desc
+                    i
+                    span 编辑器
         li.list-group-item
-            .icon.ico-doc
-            .desc
-                i
-                span 内容库
+            a.link-wrapper(href="")
+                .icon.ico-doc
+                .desc
+                    i
+                    span 内容库
         li.list-group-item
-            .icon.ico-manage
-            .desc
-                i
-                span 管理中心
+            a.link-wrapper(href="")
+                .icon.ico-manage
+                .desc
+                    i
+                    span 管理中心
+    .userinfo
+        a(href="#") 登录
+        span.sep |
+        a(href="/")
+            i.icon.ico-home
+    .userinfo.hide
+        | 欢迎
+        em 飞天魔像
+        a(href="#") 退出
+        span.sep |
+        a(href="/")
+            i.icon.ico-home

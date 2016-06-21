@@ -2,7 +2,7 @@ doctype html
 html
     head
         meta(charset="utf-8")
-        link(rel="stylesheet", href="./style.css")
+        link(rel="stylesheet", href="./all.css")
         style.
             html, body{
                 margin: 0;
@@ -10,59 +10,113 @@ html
             }
             body>section{
                 margin: 20px;
-                border: #999 solid 1px;
+                margin-top: 0;
+                border: #e6e6e6 solid 1px;
+                border-radius: 10px;
+                box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
                 padding: 10px;
                 box-sizing: border-box;
             }
+            body>h3{
+                cursor: pointer;
+                margin: 20px;
+                margin-bottom: 0;
+            }
+            {
+                display: none;
+            }
     body
-        h1 按钮
+        h3 列表块
+        section.clear
+            .left
+                include ./components/blockItem/index.pug
+            .left
+                include ./components/blockItem/add.pug
+        h3 按钮
         section
             include ./components/button/index.pug
-        h1 分类项目
+        h3 分类项目
         section
             include ./components/catItem/index.pug
-        h1 内容
+        h3 内容
         section
             include ./components/content/index.pug
-        h1 表单
+        h3 表单
         section
             include ./components/form/index.pug
-        h1 图标
+        h3 图标
         section
             include ./components/icon/index.pug
-        h1 链接
+        h3 链接
         section
             include ./components/link/index.pug
-        h1 列表
+        h3 列表
         section
-            include ./components/list/index.pug
-        h1 分类菜单
+            .box
+                include ./components/list/index.pug
+            .box
+                include ./components/list/post.pug
+        h3 分类菜单
         section
             include ./components/menu/catMenu.pug
-        h1 菜单
+        h3 菜单
         section
             include ./components/menu/index.pug
-        h1 模态弹窗
+        h3 模态弹窗
         section
             include ./components/modal/index.pug
-        h1 导航
+        h3 导航
         section
             include ./components/nav/index.pug
-        h1 分页
+        h3 分页
         section
             include ./components/pager/index.pug
-        h1 表格
+        h3 表格
         section
             include ./components/table/index.pug
-        h1 标题
+        h3 标签
+        section
+            include ./components/tabs/index.pug
+        h3 标题
         section
             include ./components/title/index.pug
-        h1 页面-分类列表
+        h3 页面-编辑器-导入
+        section(style="height:1000px")
+            include ./components/page/editor-import.pug
+        h3 页面-编辑器-常用
+        section(style="height:1000px")
+            include ./components/page/editor-common.pug
+        h3 页面-编辑器-图库
+        section(style="height:1000px")
+            include ./components/page/editor-images.pug
+        h3 页面-我的分类
         section(style="height:1000px")
             include ./components/page/category.pug
-        h1 页面-分类详情
+        h3 页面-我的分类-无分类
+        section(style="height:1000px")
+            include ./components/page/category-empty.pug
+        h3 页面-分类详情
         section(style="height:1000px")
             include ./components/page/categoryDetail.pug
-        h1 页面-内容库
+        h3 页面-内容库
         section(style="height:1000px")
             include ./components/page/content.pug
+        h3 页面-我的内容
+        section(style="height:1000px")
+            include ./components/page/myContent.pug
+        h3 页面-我的内容-无分类
+        section(style="height:1000px")
+            include ./components/page/myContent-empty.pug
+        h3 页面-待发布
+        section(style="height:1000px")
+            include ./components/page/myDraft.pug
+
+
+        script(type="text/javascript").
+            var h1s = [].slice.call(document.querySelectorAll('body>h3'))
+            h1s.map(function(h1){
+                h1.addEventListener('click', function(e){
+                    var next =  this.nextElementSibling;
+                    next.className = next.className ? "" : "hide"
+                })
+            })

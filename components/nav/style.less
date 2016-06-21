@@ -1,4 +1,4 @@
-.nav {
+nav.nav {
     background-color: #333;
     color: #fff;
     position: relative;
@@ -35,6 +35,11 @@
             height: 100%;
             width: 100%;
         }
+        .link-wrapper{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
         &.active, &:hover {
             background: @NAV_ACTIVE_BG;
 
@@ -45,6 +50,17 @@
                 width: 32px;
                 height: 32px;
             }
+        }
+    }
+    .userinfo{
+        float: right;
+        height: 60px;
+        line-height: 60px;
+        margin-top: -60px;
+        .icon{
+            margin-top: 13px;
+            margin-left: -10px;
+            float: right;
         }
     }
 }

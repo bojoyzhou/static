@@ -1,0 +1,40 @@
+.tabs{
+    .header{
+        line-height: 38px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: hidden;
+        height: 40px;
+        z-index: 2;
+        .tabs-btn{
+            display: inline-block;
+            width: 120px;
+            text-align: center;
+            border: @TABS_BG solid 1px;
+            border-bottom: @TABS_BD solid 1px;
+            background: @TABS_BG;
+            margin-left: -1px;
+            &:first-child{
+                margin-left: 0px;
+                border-left: @TABS_BG solid 1px;
+            }
+            &.active{
+                border: @TABS_BD solid 1px;
+                border-bottom: @TABS_BG solid 1px;
+            }
+        }
+
+        .active + .tabs-btn{
+            border-left: @TABS_BD solid 1px;
+        }
+    }
+    .body{
+        border: @TABS_BD solid 1px;
+        position: relative;
+        z-index: 1;
+        margin-top: -1px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}

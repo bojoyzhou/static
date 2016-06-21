@@ -1,0 +1,32 @@
+.tabs
+    .header
+        a(href="javascript:;").tabs-btn.active button1
+        a(href="javascript:;").tabs-btn button2
+        a(href="javascript:;").tabs-btn button2
+        a(href="javascript:;").tabs-btn button2
+        a(href="javascript:;").tabs-btn button2
+        a(href="javascript:;").tabs-btn button2
+        a(href="javascript:;").tabs-btn button2
+        a(href="javascript:;").tabs-btn button2
+    .body
+        .content heheheheh
+
+script(type="text/javascript").
+    var tabs = [].slice.call(document.body.querySelectorAll('.tabs .tabs-btn'));
+    tabs.map(function(tab){
+        tab.addEventListener('click', function(){
+            var prev = this.previousSibling
+            while(prev){
+                prev.className = prev.className.replace(/\bactive\b/, '');
+                prev = prev.previousSibling
+            }
+            var next = this.nextSibling
+            while(next){
+                next.className = next.className.replace(/\bactive\b/, '');
+                next = next.previousSibling
+            }
+
+            this.className = this.className.replace(/\bactive\b/, '');
+            this.className += ' active'
+        })
+    })
