@@ -1,17 +1,22 @@
-include ../nav/index.pug
-div.clear(style=" height: 100%; box-sizing: border-box; padding-top: 60px; margin-top: -60px;")
-    div.left(style="width: 100%; height: 100%; overflow: auto")
-        div(style="margin-left: 200px; padding: 20px;")
-            div.clear
-                div.left
-                    div.title 所有分类 &gt;
-                        span 乐生活
-                div.right
-                    button.btn(modal="newSource") 新建来源
-            div(style="padding-top: 20px")
-                include ../table/index.pug
-            div(style="padding-top: 20px")
-                div.right
-                    include ../pager/index.pug
-    div.left(style="margin-left: -100%; height: 100%;")
-        include ../menu/index.pug
+extends ../../layout.pug
+block style
+    link(rel="stylesheet", href="../../all.css")
+
+block content
+    include ../nav/index.pug
+    div.clear(style=" height: 100%; box-sizing: border-box; padding-top: 60px; margin-top: -60px;")
+        div.left(style="width: 100%; height: 100%; overflow: auto")
+            div(style="margin-left: 200px; padding: 20px;")
+                div.clear
+                    div.left
+                        div.title 所有分类 &gt;
+                            span 乐生活
+                    div.right
+                        button.btn(modal="newSource") 新建来源
+                div(style="padding-top: 20px")
+                    include ../table/index.pug
+                div(style="padding-top: 20px")
+                    div.right
+                        include ../pager/index.pug
+        div.left(style="margin-left: -100%; height: 100%;")
+            include ../menu/index.pug

@@ -8,6 +8,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Microsoft YaHei", "微软雅黑", "MicrosoftJhengHei", "华文细黑", "STHeiti", "MingLiu";
 }
 img {
   border: 0;
@@ -177,9 +178,9 @@ img {
   padding: 8px 30px;
   font-size: 14px;
   border-radius: 5px;
-  color: #fe995f;
+  color: #fa9b5b;
   background: #ffffff;
-  border: #fe995f solid 1px;
+  border: #fa9b5b solid 1px;
   outline: none;
   text-align: center;
   cursor: pointer;
@@ -205,7 +206,7 @@ img {
 }
 .btn.btn-primary {
   color: #ffffff;
-  background: #fe995f;
+  background: #fa9b5b;
   border: 0;
 }
 .btn.btn-block {
@@ -234,7 +235,7 @@ img {
 }
 em {
   font-style: normal;
-  color: #fe995f;
+  color: #fa9b5b;
 }
 span.sep {
   padding: 0 5px;
@@ -263,6 +264,17 @@ span.sep {
 }
 .bar-filter .split {
   margin: 0 20px;
+}
+.foot-wrapper {
+  background: #333;
+  text-align: center;
+  width: 100%;
+  display: table;
+}
+.foot-wrapper .content {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
 }
 .form label {
   line-height: 34px;
@@ -464,6 +476,9 @@ fieldset {
 .h100 {
   height: 100%;
 }
+.minh100 {
+  min-height: 100%;
+}
 .w100 {
   width: 100%;
 }
@@ -474,7 +489,7 @@ fieldset {
   cursor: pointer;
 }
 .link.primary {
-  color: #fe995f;
+  color: #fa9b5b;
 }
 .link.hint {
   color: #999999;
@@ -486,6 +501,37 @@ fieldset {
 }
 .list .list-item {
   padding: 0;
+}
+.logo {
+  display: table;
+  width: 170px;
+  height: 60px;
+  margin-left: 10px;
+  background-image: url(/images/logo.png);
+  background-size: 37px auto;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.logo .ir {
+  width: 44px;
+  height: 60px;
+  float: left;
+}
+.logo .text {
+  display: table-cell;
+  vertical-align: bottom;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-bottom: 7px;
+  color: #fff;
+  box-sizing: border-box;
+}
+.logo .text span {
+  letter-spacing: 2px;
+}
+.logo.white .text {
+  color: #fa9b5b;
 }
 .menu {
   width: 200px;
@@ -553,6 +599,7 @@ fieldset {
   box-sizing: border-box;
   padding-left: 0;
   padding-right: 0;
+  line-height: 14px;
 }
 .cat-menu .btn.btn-block {
   width: 100%;
@@ -621,6 +668,7 @@ fieldset {
 nav.nav {
   background-color: #333;
   color: #fff;
+  min-width: 660px;
   position: relative;
 }
 nav.nav .logo {
@@ -661,7 +709,7 @@ nav.nav .list-group-item .link-wrapper {
 }
 nav.nav .list-group-item.active,
 nav.nav .list-group-item:hover {
-  background: #fe995f;
+  background: #fa9b5b;
 }
 nav.nav .list-group-item.active .desc,
 nav.nav .list-group-item:hover .desc {
@@ -726,6 +774,34 @@ nav.nav .userinfo .icon {
 .postItem .info .point {
   cursor: pointer;
 }
+.qr {
+  background: #fff;
+  border: #E6E6E6 solid 1px;
+  text-align: center;
+}
+.single {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.single .title {
+  color: #2b2b2b;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 20px 0;
+  border-bottom: #e6e6e6 solid 1px;
+}
+.single .info {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #999;
+}
+.single .info span {
+  margin-right: 10px;
+}
+.single .content img {
+  max-width: 100%;
+}
 table {
   width: 100%;
   max-width: 100%;
@@ -739,7 +815,7 @@ table td {
 }
 table th {
   border-right: #FFF solid 1px;
-  background-color: #fe995f;
+  background-color: #fa9b5b;
   color: #FFF;
 }
 table th:first-child {
@@ -768,7 +844,7 @@ table td {
   width: 120px;
   text-align: center;
   border: #fff solid 1px;
-  border-bottom: #fe995f solid 1px;
+  border-bottom: #fa9b5b solid 1px;
   background: #fff;
   margin-left: -1px;
 }
@@ -777,14 +853,14 @@ table td {
   border-left: #fff solid 1px;
 }
 .tabs .header .tabs-btn.active {
-  border: #fe995f solid 1px;
+  border: #fa9b5b solid 1px;
   border-bottom: #fff solid 1px;
 }
 .tabs .header .active + .tabs-btn {
-  border-left: #fe995f solid 1px;
+  border-left: #fa9b5b solid 1px;
 }
 .tabs .body {
-  border: #fe995f solid 1px;
+  border: #fa9b5b solid 1px;
   position: relative;
   z-index: 1;
   margin-top: -1px;
@@ -797,5 +873,5 @@ table td {
   line-height: 35px;
 }
 .title span {
-  color: #fe995f;
+  color: #fa9b5b;
 }

@@ -1,18 +1,23 @@
-include ../nav/index.pug
-.h100.clear(style="box-sizing: border-box; padding-top: 60px; margin-top: -60px;")
-    .h100.w100.left(style="overflow: auto")
-        .h100.clear(style="margin-left: 200px; min-width: 772px;")
-            .h100.w100.left(style="overflow: auto")
-                div(style="margin-left: 386px;")
-                    | content
-            .h100.left(style="margin-left: -100%;")
-                .box.z-2(style="float: left; width: 386px; padding: 20px; box-sizing: border-box;")
-                    .form(style="margin-top: 30px")
-                        input(type="text").field
-                    button(style="margin-top: 30px").btn 导入
-                .h100.z-1(style="float: left; margin-left: -50%; width: 386px;")
-                    .h100(style="padding-top: 190px;box-sizing: border-box;")
-                        .box.h100(style="overflow: auto;")
-                            include ../list/post.pug
-    .h100.left(style="margin-left: -100%;")
-        include ../menu/index.pug
+extends ../../layout.pug
+block style
+    link(rel="stylesheet", href="../../all.css")
+
+block content
+    include ../nav/index.pug
+    .h100.clear(style="box-sizing: border-box; padding-top: 60px; margin-top: -60px;")
+        .h100.w100.left(style="overflow: auto")
+            .h100.clear(style="margin-left: 200px; min-width: 772px;")
+                .h100.w100.left(style="overflow: auto")
+                    div(style="margin-left: 386px;")
+                        | content
+                .h100.left(style="margin-left: -100%;")
+                    .box.z-2(style="float: left; width: 386px; padding: 20px; box-sizing: border-box;")
+                        .form(style="margin-top: 30px")
+                            input(type="text").field
+                        button(style="margin-top: 30px").btn 导入
+                    .h100.z-1(style="float: left; margin-left: -50%; width: 386px;")
+                        .h100(style="padding-top: 190px;box-sizing: border-box;")
+                            .box.h100(style="overflow: auto;")
+                                include ../list/post.pug
+        .h100.left(style="margin-left: -100%;")
+            include ../menu/index.pug

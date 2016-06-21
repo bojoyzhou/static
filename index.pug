@@ -1,122 +1,136 @@
-doctype html
-html
-    head
-        meta(charset="utf-8")
-        link(rel="stylesheet", href="./all.css")
-        style.
-            html, body{
-                margin: 0;
-                padding: 0;
-            }
-            body>section{
-                margin: 20px;
-                margin-top: 0;
-                border: #e6e6e6 solid 1px;
-                border-radius: 10px;
-                box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
-                padding: 10px;
-                box-sizing: border-box;
-            }
-            body>h3{
-                cursor: pointer;
-                margin: 20px;
-                margin-bottom: 0;
-            }
-            {
-                display: none;
-            }
-    body
-        h3 列表块
-        section.clear
-            .left
-                include ./components/blockItem/index.pug
-            .left
-                include ./components/blockItem/add.pug
-        h3 按钮
-        section
-            include ./components/button/index.pug
-        h3 分类项目
-        section
-            include ./components/catItem/index.pug
-        h3 内容
-        section
-            include ./components/content/index.pug
-        h3 表单
-        section
-            include ./components/form/index.pug
-        h3 图标
-        section
-            include ./components/icon/index.pug
-        h3 链接
-        section
-            include ./components/link/index.pug
-        h3 列表
-        section
-            .box
-                include ./components/list/index.pug
-            .box
-                include ./components/list/post.pug
-        h3 分类菜单
-        section
-            include ./components/menu/catMenu.pug
-        h3 菜单
-        section
-            include ./components/menu/index.pug
-        h3 模态弹窗
-        section
-            include ./components/modal/index.pug
-        h3 导航
-        section
-            include ./components/nav/index.pug
-        h3 分页
-        section
-            include ./components/pager/index.pug
-        h3 表格
-        section
-            include ./components/table/index.pug
-        h3 标签
-        section
-            include ./components/tabs/index.pug
-        h3 标题
-        section
-            include ./components/title/index.pug
-        h3 页面-编辑器-导入
-        section(style="height:1000px")
-            include ./components/page/editor-import.pug
-        h3 页面-编辑器-常用
-        section(style="height:1000px")
-            include ./components/page/editor-common.pug
-        h3 页面-编辑器-图库
-        section(style="height:1000px")
-            include ./components/page/editor-images.pug
-        h3 页面-我的分类
-        section(style="height:1000px")
-            include ./components/page/category.pug
-        h3 页面-我的分类-无分类
-        section(style="height:1000px")
-            include ./components/page/category-empty.pug
-        h3 页面-分类详情
-        section(style="height:1000px")
-            include ./components/page/categoryDetail.pug
-        h3 页面-内容库
-        section(style="height:1000px")
-            include ./components/page/content.pug
-        h3 页面-我的内容
-        section(style="height:1000px")
-            include ./components/page/myContent.pug
-        h3 页面-我的内容-无分类
-        section(style="height:1000px")
-            include ./components/page/myContent-empty.pug
-        h3 页面-待发布
-        section(style="height:1000px")
-            include ./components/page/myDraft.pug
+extends ./layout.pug
 
-
-        script(type="text/javascript").
-            var h1s = [].slice.call(document.querySelectorAll('body>h3'))
-            h1s.map(function(h1){
-                h1.addEventListener('click', function(e){
-                    var next =  this.nextElementSibling;
-                    next.className = next.className ? "" : "hide"
-                })
-            })
+block content
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/editor-import.html") 页面-编辑器-导入
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/editor-common.html") 页面-编辑器-常用
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/editor-images.html") 页面-编辑器-图库
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/category.html") 页面-我的分类
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/category-empty.html") 页面-我的分类-无分类
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/categoryDetail.html") 页面-分类详情
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/content.html") 页面-内容库
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/myContent.html") 页面-我的内容
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/myContent-empty.html") 页面-我的内容-无分类
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/myDraft.html") 页面-待发布
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/single.html") 页面-新闻页
+    - x=1
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) logo
+    section
+        div.bg-dark
+            include ./components/logo/index.pug
+        div
+            include ./components/logo/white.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 列表块
+    section.clear
+        .left
+            include ./components/blockItem/index.pug
+        .left
+            include ./components/blockItem/add.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 按钮
+    section
+        include ./components/button/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 分类项目
+    section
+        include ./components/catItem/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 内容
+    section
+        include ./components/content/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 页脚
+    section
+        include ./components/footer/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 表单
+    section
+        include ./components/form/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 图标
+    section
+        include ./components/icon/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 链接
+    section
+        include ./components/link/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 列表
+    section
+        .box
+            include ./components/list/index.pug
+        .box
+            include ./components/list/post.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 分类菜单
+    section
+        include ./components/menu/catMenu.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 菜单
+    section
+        include ./components/menu/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 模态弹窗
+    section
+        include ./components/modal/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 导航
+    section
+        include ./components/nav/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 分页
+    section
+        include ./components/pager/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 二维码
+    section
+        div(style="width: 160px")
+            include ./components/qrcode/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 新闻页
+    section
+        include ./components/single/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 表格
+    section
+        include ./components/table/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 标签
+    section
+        include ./components/tabs/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) 标题
+    section
+        include ./components/title/index.pug

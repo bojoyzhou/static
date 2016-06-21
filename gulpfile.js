@@ -5,6 +5,8 @@ var path = require('path');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', function () {
+    gulp.run('pug');
+    gulp.run('less');
     gulp.watch('**/*.pug', function() {
         try{
             gulp.run('pug');
@@ -19,8 +21,6 @@ gulp.task('default', function () {
 
         }
     });
-    gulp.run('pug');
-    gulp.run('less');
 });
 
 gulp.task('less', function() {
@@ -39,7 +39,9 @@ gulp.task('less', function() {
 });
 
 gulp.task('pug', function() {
-    return gulp.src('index.pug')
+    return gulp.src(['index.pug', './components/page/*.pug'], {
+            base: __dirname
+        })
         .pipe(pug({
             // Your options in here.
         }))

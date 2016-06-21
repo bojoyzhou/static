@@ -1,0 +1,31 @@
+.logo{
+    display: table;
+    width: 170px;
+    height: 60px;
+    margin-left: 10px;
+    background-image: url(/images/logo.png);
+    background-size: 37px auto;
+    background-repeat: no-repeat;
+    background-position: left center;
+    .ir{
+        width: 44px;
+        height: 60px;
+        float: left;
+    }
+    .text{
+        display: table-cell;
+        vertical-align: bottom;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.5;
+        padding-bottom: 7px;
+        color: @LOGO_FC;
+        box-sizing: border-box;
+        span{
+            letter-spacing: 2px;
+        }
+    }
+    &.white .text{
+        color: @LOGO_WHITE_FC;
+    }
+}

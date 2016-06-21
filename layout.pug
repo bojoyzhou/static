@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        block style
+            link(rel="stylesheet", href="./all.css")
+        style.
+            html, body{
+                margin: 0;
+                padding: 0;
+            }
+            body>section{
+                margin: 20px;
+                margin-top: 0;
+                border: #e6e6e6 solid 1px;
+                border-radius: 10px;
+                box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+                padding: 10px;
+                box-sizing: border-box;
+                position: relative;
+            }
+            body>h3{
+                cursor: pointer;
+                margin: 20px;
+                margin-bottom: 0;
+            }
+    body
+        block content
