@@ -7,17 +7,23 @@ block content
     .h100.clear(style="box-sizing: border-box; padding-top: 60px; margin-top: -60px;")
         .h100.w100.left(style="overflow: auto")
             .h100.clear(style="margin-left: 200px; min-width: 772px;")
-                .h100.w100.left(style="overflow: auto")
-                    div(style="margin-left: 386px;")
-                        | content
-                .h100.left(style="margin-left: -100%;")
-                    .box.z-2(style="float: left; width: 386px; padding: 20px; box-sizing: border-box;")
-                        .form(style="margin-top: 30px")
-                            input(type="text").field
-                        button(style="margin-top: 30px").btn 导入
-                    .h100.z-1(style="float: left; margin-left: -50%; width: 386px;")
-                        .h100(style="padding-top: 190px;box-sizing: border-box;")
-                            .box.h100(style="overflow: auto;")
-                                include ../list/post.pug
+                .w100.h100.right
+                    .h100.w100.left(style="overflow: auto")
+                        .h100(style="margin-left: 386px; overflow: hidden;")
+                            .h100.w100(style="display: table")
+                                .h100(style="min-width: 600px;display: table-cell;")
+                                      .h100.box(style="width:540px; margin: 0 auto; padding:20px; box-sizing: border-box")
+                                            | content
+                                .h100.box(style="width: 275px; padding: 10px; box-sizing: border-box;display: table-cell;")
+                                    include ../sideBar/index.pug
+                    .h100.left(style="margin-left: -100%;  width: 386px;")
+                        .left.w100.box.z-2(style="padding: 20px; box-sizing: border-box;")
+                            .form(style="margin-top: 30px")
+                                input(type="text").field
+                            button(style="margin-top: 30px").btn 导入
+                        .left.w100.h100.z-1(style="padding-top: 170px; margin-top: -170px; box-sizing: border-box;")
+                            .h100(style="padding-top: 20px;box-sizing: border-box;")
+                                .box.h100(style="overflow: auto;")
+                                    include ../list/post.pug
         .h100.left(style="margin-left: -100%;")
             include ../menu/index.pug

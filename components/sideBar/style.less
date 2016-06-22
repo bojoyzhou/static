@@ -1,0 +1,49 @@
+@media screen and (max-width: 1475px) {
+    .sidebar{
+        width: 0!important;
+        padding: 0!important;
+        border-left: @SIDE_BAR_D solid 10px;
+        margin-right: -3px;
+        .form{
+            display: none!important;
+        }
+        .expand{
+            display: block!important;
+        }
+        .fold{
+            display: none!important;
+        }
+    }
+}
+.sidebar{
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 275px;
+    transition: all 1s;
+    .label{
+        position: absolute;
+        text-align: center;
+        width: 32px;
+        height: 75px;
+        top: 50%;
+        margin-top: -40px;
+        left:-32px;
+        border: @SIDE_BAR_G solid 1px;
+        border-right: @SIDE_BAR_W solid 1px;
+        background-color: @SIDE_BAR_W;
+        line-height: 75px;
+    }
+    .fold{
+        display: block;
+    }
+    .expand{
+        left:-42px;
+        display: none;
+        line-height: 1;
+        border-right: 0;
+        background-color: @SIDE_BAR_D;
+        color: @SIDE_BAR_W;
+    }
+}
