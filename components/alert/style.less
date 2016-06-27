@@ -1,0 +1,35 @@
+.alert-wrapper{
+    text-align: center;
+    width: 100%;
+    min-height: 1px;
+    position: relative;
+    z-index: 200;
+}
+.alert{
+    display: inline-block;
+    line-height: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
+    color: #e6e6e6;
+    z-index: 200;
+    .close{
+        color: #fff;
+        float: right;
+        line-height: 100%;
+        border-radius: 50%;
+        background: #333;
+        margin-left: 10px;
+        cursor: pointer;
+        padding: 3px;
+        &:hover{
+            color: #e6e6e6
+        }
+    }
+    &-ab{
+        position: fixed;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

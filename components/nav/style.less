@@ -36,7 +36,7 @@ nav.nav {
             height: 100%;
             width: 100%;
         }
-        .link-wrapper{
+        .link-wrapper {
             width: 100%;
             height: 100%;
             display: block;
@@ -53,15 +53,78 @@ nav.nav {
             }
         }
     }
-    .userinfo{
+    .userinfo {
         float: right;
         height: 60px;
         line-height: 60px;
         margin-top: -60px;
-        .icon{
+
+        .icon {
             margin-top: 13px;
             margin-left: -10px;
             float: right;
         }
+    }
+}
+nav.nav-index {
+    position: relative;
+    width: 100%;
+
+    .list-group {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+
+        &:after {
+            display: table;
+            content: " ";
+            clear: both;
+        }
+    }
+    .list-group-item {
+        list-style: none;
+        float: left;
+        margin-right: 30px;
+        height: 100px;
+    }
+    .list-group-link {
+        display: block;
+        text-decoration: none;
+        bottom: 0;
+        color: #fff;
+        height: 36px;
+        padding: 0 20px;
+        line-height: 36px;
+
+        &:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            height: 100%;
+            border: #fff solid 1px;
+            border-left: 0;
+            border-right: 0;
+            left: 50%;
+            width: 0;
+            margin-left: -60%;
+            transition: .2s;
+        }
+        &:hover:before, &:active:before {
+            margin-left: -30%;
+            width: 60%;
+        }
+    }
+    .wrap {
+        position: absolute;
+        left: 50%;
+    }
+    .rwrap {
+        position: relative;
+        margin-top: 38px;
+    }
+    .clear:after, .rwrap:after {
+        display: table;
+        content: " ";
+        clear: both;
     }
 }

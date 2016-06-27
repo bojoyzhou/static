@@ -1,0 +1,16 @@
+extends ../../layout.pug
+block style
+    link(rel="stylesheet", href="../../all.css")
+
+block content
+    .w100(style="height: 600px;position: relative;text-align: center")
+        .pos-a(style="left: 50%;margin-left:-500px;top: 25px;")
+            include ../logo/index.pug
+        div(style="margin-left:50%;")
+            include ../nav/welcome.pug
+        .w100.h100.pos-a(style="top: 0;z-index: -1;")
+            include ../banner/index.pug
+        a.pos-a.btn.btn-primary(style="top: 400px;left: 50%; margin-left: -70px;") 免费注册&gt;&gt;
+    include ../welcome/index.pug
+    .w100(style="margin-top:20px")
+        include ../footer/index.pug

@@ -1,0 +1,20 @@
+extends ../../layout.pug
+block style
+    link(rel="stylesheet", href="../../all.css")
+
+block content
+    include ../nav/index.pug
+    .h100.clear(style="box-sizing: border-box; padding-top: 60px; margin-top: -60px; padding-bottom: 42px; margin-bottom: -42px;")
+        .w100.h100.bg.pos-r(style="background-image:url(/images/login_bg.png)")
+            .pos-a.w100.h100(style="background-color:rgba(0,0,0,0.4);z-index:1")
+            .w100.h100.table.pos-r(style="z-index:2;")
+                .table-v
+                    div(style="width: 1150px; height: 410px;margin: 0 auto")
+                        .left.h100(style="width: 480px;  box-sizing: border-box; padding-top: 120px;")
+                            include ../logo/large.pug
+                            div(style="font-size: 30px; color: #fff; text-align: left;")
+                                | 更多资讯，更多内容，更多选择
+                        .right.box(style="padding: 60px; padding-bottom: 20px; box-sizing: border-box; border-radius: 10px; background-color: #fff; width: 480px;")
+                            include ../login/login.pug
+    div
+        include ../footer/index.pug

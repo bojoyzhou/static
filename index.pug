@@ -23,7 +23,17 @@ block content
         a(target="_blank", href="/components/page/myDraft.html") 页面-待发布
     h3(id="id-"+x)
         a(target="_blank", href="/components/page/single.html") 页面-新闻页
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/login.html") 页面-登录
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/regist.html") 页面-注册
     - x=1
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) alert
+    section
+        div
+            include ./components/alert/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) logo
@@ -32,6 +42,19 @@ block content
             include ./components/logo/index.pug
         div
             include ./components/logo/white.pug
+        div
+            include ./components/logo/large.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) loading
+    section
+        div
+            include ./components/loading/index.pug
+    - ++x
+    h3(id="id-"+x)
+        a(href="#id-"+x) login
+    section
+        include ./components/login/login.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 列表块

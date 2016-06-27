@@ -1,0 +1,29 @@
+.login-wrapper
+    .title.clear
+        .left 登录
+        .right 还没有账号？
+            a(href="#")
+                em 立即注册
+    .form
+        div.inline
+            label.left
+                .icon.ico-username
+            .col-10
+                input.field-under(type="text", placeholder="请输入您的用户名")
+        div.inline
+            label.left
+                .icon.ico-password
+            .col-10
+                input.field-under(type="password", placeholder="请输入您的用户名")
+        div.inline
+            label.left
+                .icon.ico-vcode
+            .col-8
+                input.field-under(type="text", placeholder="请输入您的用户名")
+            .left
+                img(src="http://www.8zcloud.com/api/vcode")
+    .error.ta-l 用户名不正确
+    .login-btn
+        a.btn.btn-primary.btn-block 登录
+    .footer.right.content
+        a(href="#") 忘记密码

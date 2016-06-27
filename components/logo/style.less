@@ -1,4 +1,4 @@
-.logo{
+.logo {
     display: table;
     width: 170px;
     height: 60px;
@@ -7,12 +7,13 @@
     background-size: 37px auto;
     background-repeat: no-repeat;
     background-position: left center;
-    .ir{
+
+    .ir {
         width: 44px;
         height: 60px;
         float: left;
     }
-    .text{
+    .text {
         display: table-cell;
         vertical-align: bottom;
         font-weight: bold;
@@ -21,11 +22,32 @@
         padding-bottom: 7px;
         color: @LOGO_FC;
         box-sizing: border-box;
-        span{
+
+        span {
             letter-spacing: 2px;
         }
     }
-    &.white .text{
+    &.white .text {
         color: @LOGO_WHITE_FC;
+    }
+    &.large {
+        width: 290px;
+        height: 70px;
+        background-image: url(/images/logo_large.png);
+        background-size: auto;
+
+        .ir {
+            height: 70px;
+            width: 70px;
+        }
+        .text {
+            font-size: 24px;
+            color: @LOGO_WHITE_FC;
+            padding: 0;
+
+            span {
+                letter-spacing: 4px;
+            }
+        }
     }
 }

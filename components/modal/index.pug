@@ -57,65 +57,29 @@
             .title 搜索结果
             fieldset(style="height: 275px; overflow: auto;")
                 ul.list
-                    li.list-item
+                    li.pointer.list-item
                         label
                             input(type="radio")
                             | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
-                        label
-                            input(type="radio")
-                            | 我们是一只富有激情的创新团队。
-                    li.list-item
+                    li.pointer.list-item
                         label
                             input(type="radio")
                             | 我们是一只富有激情的创新团队。
         .mask-footer
             button.btn.btn-primary 下一步
+.mask(style="display:none; text-align: center;", modal-info)
+    div(style="display:inline-block")
+        .mask-panel
+            .mask-title
+                h4 信息提示
+                a.close &times;
+            .mask-body
+                .content 这里是提示信息~~~~这里是提示信息~~~~这里是提示信息~~~~这里是提示信息~~~~这里是提示信息~~~~这里是提示信息~~~~这里是提示信息~~~~这里是提示信息~~~~这里是提示信息~~~~
+            .mask-footer
+                button.btn.btn-primary 确认
+                button.btn.btn-cancel 取消
 
+button(modal="info").btn.btn-primary 普通提示
 button(modal="editSource").btn.btn-primary 编辑来源
 button(modal="newCategory").btn.btn-primary 新建分类
 button(modal="newSource").btn.btn-primary 新建来源
