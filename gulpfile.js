@@ -35,7 +35,8 @@ gulp.task('less', function() {
             //        transform: rotate(45deg);
             remove:true //是否去掉不必要的前缀 默认：true
         }))
-        .pipe(gulp.dest('./build'));
+        .pipe(gulp.dest('./build'))
+        .pipe(gulp.dest('./web/css'));
 });
 
 gulp.task('pug', function() {

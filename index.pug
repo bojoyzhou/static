@@ -27,6 +27,10 @@ block content
         a(target="_blank", href="/components/page/login.html") 页面-登录
     h3(id="id-"+x)
         a(target="_blank", href="/components/page/regist.html") 页面-注册
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/regist.html") 页面-忘记密码
+    h3(id="id-"+x)
+        a(target="_blank", href="/components/page/mp.html") 页面-公众号管理
     - x=1
     - ++x
     h3(id="id-"+x)
@@ -75,7 +79,17 @@ block content
         a(href="#id-"+x) 分类项目
     section
         include ./components/catItem/index.pug
-    - ++x
+    section.clear(style="margin-left: -20px; margin-top: -10px;")
+        .left(style="margin-left:20px; margin-top: 10px")
+            include ./components/catItem/s.pug
+        .left
+            include ./components/catItem/s.pug
+        .left
+            include ./components/catItem/s.pug
+        .left
+            include ./components/catItem/s.pug
+        .left
+            include ./components/catItem/s.pug
     h3(id="id-"+x)
         a(href="#id-"+x) 内容
     section

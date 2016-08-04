@@ -10,12 +10,11 @@ block content
                 .w100.h100.right
                     .h100.w100.left(style="overflow: auto")
                         .h100(style="margin-left: 386px; overflow: hidden;")
-                            .h100.w100(style="display: table")
-                                .h100(style="min-width: 600px;display: table-cell;")
+                            .h100.w100(style="display: flex")
+                                .h100(style="min-width: 600px;")
                                       .h100.box(style="width:540px; margin: 0 auto; padding:20px; box-sizing: border-box")
                                             | content
-                                .h100.box(style="width: 275px; padding: 10px; box-sizing: border-box;display: table-cell;")
-                                    include ../sideBar/index.pug
+                                include ../sideBar/index.pug
                     .h100.left(style="margin-left: -100%;  width: 386px;")
                         .left.w100.box.z-2(style="padding: 20px; box-sizing: border-box;")
                             .form(style="margin-top: 30px")

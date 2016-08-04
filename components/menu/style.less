@@ -1,6 +1,7 @@
 .menu {
     width: 200px;
-    background: @MENU_BG;
+    height: 100%;
+    background: #666666;
 
     &, .sub-menu {
         list-style: none;
@@ -17,7 +18,7 @@
 
         .menu-link, .sub-menu-link {
             &.active, &:hover {
-                background: @MENU_FOR;
+                background: #404040;
             }
         }
     }
@@ -30,7 +31,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        color: @MENU_FC;
+        color: #FFF;
         font-size: 16px;
         text-decoration: none;
 
@@ -42,9 +43,8 @@
     }
 }
 .cat-menu{
-    background: @MENU_BG;
+    background: #666666;
     width: 200px;
-    height: 100%;
     padding: 0 20px;
     box-sizing: border-box;
     .btn{

@@ -1,0 +1,39 @@
+.login-wrapper
+    .title.clear
+        .left 忘记密码
+        .right 已有账号？
+            a(href="#")
+                em 直接登录
+    .form
+        div.inline
+            label.left
+                .icon.ico-email
+            .col-10
+                input.field-under(type="text", placeholder="请输入您的用户名")
+        div.inline
+            label.left
+                .icon.ico-vcode
+            .col-8
+                input.field-under(type="text", placeholder="请输入您的用户名")
+            .left
+                img(src="http://www.8zcloud.com/api/vcode")
+    .error.ta-l 用户名不正确
+    .login-btn
+        a.btn.btn-primary.btn-block 发送邮件
+
+    .title.clear
+        .left 激活内容服务平台账号
+    .info(style="text-align: left;font-size: 14px;")
+        ul.list
+            li 确认邮件已发送至你的注册邮箱：
+                em qq@qq.com
+            li 请进入邮箱查看邮件，并激活内容服务平台账号
+        .login-btn
+            a.btn.btn-primary.btn-block 发送邮件
+        ul.list(style="margin-top:20px")
+            li 没有收到邮件？
+            li 1、请检查邮箱地址是否正确，你可以返回
+                a.link(href="#") 重新填写
+            li 2、请检查邮件垃圾箱
+            li 3、若仍未收到确认，请尝试
+                a.link(href="#") 重新发送

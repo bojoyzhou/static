@@ -1,0 +1,62 @@
+extends ../../layout.pug
+block style
+    link(rel="stylesheet", href="../../all.css")
+
+block content
+    include ../nav/index.pug
+    div.clear(style=" height: 100%; box-sizing: border-box; padding-top: 60px; margin-top: -60px; background: #fafafa;")
+        div.left(style="width: 100%; height: 100%; overflow: auto")
+            div(style="margin-left: 200px; padding: 20px;")
+                .shadow(style="line-height: 40px; background: #fff; font-size: 16px; border-left: #96d587 solid 10px;margin: 20px 0 10px; padding-left: 10px;") 微信公众号
+                    .icon.ico-arrow(style="float: right; height: 40px;")
+                section.clear(style="margin-left: -20px; margin-top: -10px;")
+                    .left.show(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        .shadow(style="width:305px; height: 100px; background: #fff; line-height: 100%; text-align: center;")
+                            a(href="#", style="display: block; padding-top: 30px; height: 100%; box-sizing: border-box;")
+                                img(src="/images/add_big.png")
+                .shadow(style="line-height: 40px; background: #fff; font-size: 16px; border-left: #fd8788 solid 10px;margin: 20px 0 10px; padding-left: 10px;") 新浪微博
+                    .icon.ico-arrow.r180(style="float: right; height: 40px;")
+                section.clear(style="margin-left: -20px; margin-top: -10px; display: none;")
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        .shadow(style="width:305px; height: 100px; background: #fff; line-height: 100%; text-align: center;")
+                            a(href="#", style="display: block; padding-top: 30px; height: 100%; box-sizing: border-box;")
+                                img(src="/images/add_big.png")
+                .shadow(style="line-height: 40px; background: #fff; font-size: 16px; border-left: #ffba8c solid 10px;margin: 20px 0 10px; padding-left: 10px;") 头条号
+                    .icon.ico-arrow(style="float: right; height: 40px;")
+                section.clear(style="margin-left: -20px; margin-top: -10px;")
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        include ../catItem/s.pug
+                    .left(style="margin-left:20px; margin-top: 10px")
+                        .shadow(style="width:305px; height: 100px; background: #fff; line-height: 100%; text-align: center;")
+                            a(href="#", style="display: block; padding-top: 30px; height: 100%; box-sizing: border-box;")
+                                img(src="/images/add_big.png")
+        div.left(style="margin-left: -100%; height: 100%;")
+            include ../menu/index.pug

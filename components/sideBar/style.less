@@ -2,7 +2,7 @@
     .sidebar{
         width: 0!important;
         padding: 0!important;
-        border-left: @SIDE_BAR_D solid 10px;
+        border-left: #333 solid 10px;
         margin-right: -3px;
         .form{
             display: none!important;
@@ -15,6 +15,9 @@
         }
     }
 }
+// body{
+//     min-width: 1210px;
+// }
 .sidebar{
     position: relative;
     padding: 20px;
@@ -22,6 +25,7 @@
     height: 100%;
     width: 275px;
     transition: all 1s;
+    .box();
     .label{
         position: absolute;
         text-align: center;
@@ -30,9 +34,9 @@
         top: 50%;
         margin-top: -40px;
         left:-32px;
-        border: @SIDE_BAR_G solid 1px;
-        border-right: @SIDE_BAR_W solid 1px;
-        background-color: @SIDE_BAR_W;
+        border: #E6E6E6 solid 1px;
+        border-right: #FFF solid 1px;
+        background-color: #FFF;
         line-height: 75px;
     }
     .fold{
@@ -43,7 +47,7 @@
         display: none;
         line-height: 1;
         border-right: 0;
-        background-color: @SIDE_BAR_D;
-        color: @SIDE_BAR_W;
+        background-color: #333;
+        color: #FFF;
     }
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp & cd build && browser-sync start --server --files \"*.*\"",
+    "start": "gulp & cd build && browser-sync start --port 4000 --server --files \"*.*\"",
     "stop": "pkill node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

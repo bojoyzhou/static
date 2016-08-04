@@ -4,8 +4,8 @@ block style
 
 block content
     include ../nav/index.pug
-    div.clear(style=" height: 100%; box-sizing: border-box; padding-top: 60px; margin-top: -60px;")
-        div.left(style="width: 100%; height: 100%; overflow: auto")
+    div.clear(style="box-sizing: border-box; padding-top: 60px; margin-top: -60px;min-height:100%")
+        div.left(style="width: 100%;")
             div(style="margin-left: 200px;")
                 div
                     include ../filterbar/index.pug
@@ -21,5 +21,123 @@ block content
                             include ../postItem/index.pug
                         li(style="margin-bottom: 20px;").list-item
                             include ../postItem/index.pug
-        div.left(style="margin-left: -100%; height: 100%;")
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+                        li(style="margin-bottom: 20px;").list-item
+                            include ../postItem/index.pug
+        div.js-menu.left(style="margin-left: -100%; height: 100%;")
             include ../menu/catMenu.pug
+    script.
+        (function(){
+            var menu = document.querySelector('.js-menu')
+            var mc = menu.children[0]
+            var offset = menu.offsetHeight - document.body.offsetHeight
+            if(offset < 0){
+                offset = 0
+                menu.style.height = document.body.offsetHeight + 'px'
+                mc.style.height = menu.style.height
+            }
+            var old = document.body.scrollTop
+            var toff = -offset
+            window.addEventListener('scroll', function(e){
+                var ret = document.body.scrollTop - old
+                old = document.body.scrollTop
+                console.log(ret, toff)
+                ret = ret || toff
+                if(ret > 0){
+                    if(document.body.scrollTop > 60 + offset){
+                        mc.style.position= 'fixed'
+                        mc.style.top= -offset + 'px'
+                    }
+                    toff = -offset
+                }else if(ret < 0){
+                    if(document.body.scrollTop <= 60){
+                        mc.style.position= 'static'
+                    }else{
+                        toff -= ret
+                        if(toff >= 0){
+                            mc.style.top= '0px'
+                            mc.style.position= 'fixed'
+                        }else{
+                            mc.style.top= toff + 'px'
+                        }
+                    }
+                }
+            })
+        })()

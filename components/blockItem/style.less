@@ -2,20 +2,20 @@
     padding: 20px;
 
     & + & {
-        border-top: @BLOCK_POST_BD dashed 1px;
+        border-top: #E6E6E6 dashed 1px;
     }
     .head {
         line-height: 46px;
     }
     .body {
-        color: @BLOCK_POST_FC;
+        color: #999;
     }
     .foot {
         margin-top: 24px;
         font-size: 12px;
         padding-bottom: 12px;
         text-align: center;
-        color: @BLOCK_POST_FC;
+        color: #999;
 
         .date {
             margin-left: 20%;
@@ -25,22 +25,22 @@
         }
     }
     &:hover {
-        background: @BLOCK_POST_ACTIVE_BG;
+        background: #E6E6E6;
     }
 }
 .block-item, .block-add {
     width: 200px;
     height: 230px;
     margin: 10px;
-    background-color: @BLOCK_ITEM_BG;
-    box-shadow: 0 1px 8px @SHADOW_HOVER;
+    background-color: #FFF;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     padding: 0 10px;
-    color: @BLOCK_ITEM_FC;
+    color: #999;
     font-size: 12px;
 
     &:hover {
-        box-shadow: 0 1px 10px @SHADOW;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
     }
 }
 .block-img {
@@ -55,7 +55,7 @@
         outline: none;
     }
     &:hover {
-        background: @BLOCK_ITEM_ACTIVE_BG;
+        background: #E6E6E6;
         .close {
             display: block;
         }
@@ -68,14 +68,14 @@
         position: absolute;
         right: 10px;
         top: 10px;
-        background-color: @CLOSE_BG;
+        background-color: rgba(0, 0, 0, 0.2);
         text-align: center;
         line-height: 28px;
-        color: @CLOSE_FC;
+        color: #FFF;
         cursor: pointer;
         transition: .5s;
         &:hover{
-            background-color: @CLOSE_ACTIVE_BG;
+            background-color: rgba(0, 0, 0, 0.5);
         }
     }
 }
