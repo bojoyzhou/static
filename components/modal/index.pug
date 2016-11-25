@@ -32,9 +32,22 @@
                     input.field(type="text", placeholder="请输入分类名称")
                 div.inline
                     input.field(type="text", placeholder="请输入分类描述")
-
         .mask-footer
             button.btn.btn-primary 下一步
+
+.mask(style="display:none", modal-rename)
+    .mask-panel
+        .mask-title
+            h4 重命名
+            a.close &times;
+        .mask-body
+            div.form
+                div.inline
+                    input.field(type="text", placeholder="请输入分类名称")
+                div.inline
+                    input.field(type="text", placeholder="请输入分类描述")
+        .mask-footer
+            button.btn.btn-primary 保存
 
 .mask(style="display:none", modal-newSource)
     .mask-panel
@@ -43,13 +56,6 @@
             a.close &times;
         .mask-body
             div.form
-                div.inline
-                    label
-                        input(type="radio")
-                        | 来自网站
-                    label
-                        input(type="radio")
-                        | 来自APP
                 div.inline
                     div.pos-r
                         input.field(type="text", placeholder="请输入关键词")
@@ -61,14 +67,17 @@
                 ul.list
                     li.pointer.list-item
                         label
-                            input(type="radio")
+                            input(type="checkbox")
                             | 我们是一只富有激情的创新团队。
                     li.pointer.list-item
                         label
-                            input(type="radio")
+                            input(type="checkbox")
                             | 我们是一只富有激情的创新团队。
+                div.no-result
+                    p 没有找到想要的？
+                    a.btn.btn-cancel 求助开发
         .mask-footer
-            button.btn.btn-primary 下一步
+            button.btn 添加
 .mask(style="display:none; text-align: center;", modal-info)
     div(style="display:inline-block")
         .mask-panel

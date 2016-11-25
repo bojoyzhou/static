@@ -47,10 +47,11 @@
     width: 200px;
     padding: 0 20px;
     box-sizing: border-box;
+    position: relative;
     .btn{
         display: block;
         float: left;
-        width: 70px;
+        width: 75px;
         margin-top: 20px;
         margin-right: 10px;
         box-sizing: border-box;
@@ -60,6 +61,45 @@
 
         &.btn-block{
             width: 100%;
+            margin-top: 20px;
+        }
+        &:nth-child(odd){
+            margin-right: 0;
+        }
+    }
+    .footer{
+        margin-top: 80px;
+        width: 160px;
+        .btn{
+            border-style: dashed;
+            background-color: transparent;
+        }
+    }
+    .group{
+        padding-top: 20px;
+
+        .btn-block{
+            width: 50%;
+            margin-top: 20px;
+            margin: 0;
+        }
+        .btn{
+            float: left;
+            color: #fa9b5b;
+            border-color: #fa9b5b;
+            &:hover,&.active{
+                background: #fa9b5b;
+                color:#fff;
+            }
+        }
+        .btn:not(:last-child){
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .btn:not(:first-child){
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-left: -1px;
         }
     }
 }

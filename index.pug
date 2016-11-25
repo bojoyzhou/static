@@ -2,174 +2,174 @@ extends ./layout.pug
 
 block content
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/editor-import.html") 页面-编辑器-导入
+        a(target="_blank", href="components/page/editor-import.html") 页面-编辑器-导入
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/editor-common.html") 页面-编辑器-常用
+        a(target="_blank", href="components/page/editor-common.html") 页面-编辑器-常用
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/editor-images.html") 页面-编辑器-图库
+        a(target="_blank", href="components/page/editor-images.html") 页面-编辑器-图库
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/category.html") 页面-我的分类
+        a(target="_blank", href="components/page/category.html") 页面-我的分类
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/category-empty.html") 页面-我的分类-无分类
+        a(target="_blank", href="components/page/category-empty.html") 页面-我的分类-无分类
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/categoryDetail.html") 页面-分类详情
+        a(target="_blank", href="components/page/categoryDetail.html") 页面-分类详情
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/content.html") 页面-内容库
+        a(target="_blank", href="components/page/content.html") 页面-内容库
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/myContent.html") 页面-我的内容
+        a(target="_blank", href="components/page/myContent.html") 页面-我的内容
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/myContent-empty.html") 页面-我的内容-无分类
+        a(target="_blank", href="components/page/myContent-empty.html") 页面-我的内容-无分类
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/myDraft.html") 页面-待发布
+        a(target="_blank", href="components/page/myDraft.html") 页面-待发布
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/single.html") 页面-新闻页
+        a(target="_blank", href="components/page/single.html") 页面-新闻页
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/login.html") 页面-登录
+        a(target="_blank", href="components/page/login.html") 页面-登录
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/regist.html") 页面-注册
+        a(target="_blank", href="components/page/regist.html") 页面-注册
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/regist.html") 页面-忘记密码
+        a(target="_blank", href="components/page/regist.html") 页面-忘记密码
     h3(id="id-"+x)
-        a(target="_blank", href="/components/page/mp.html") 页面-公众号管理
+        a(target="_blank", href="components/page/mp.html") 页面-公众号管理
     - x=1
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) alert
     section
         div
-            include ./components/alert/index.pug
+            include components/alert/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) logo
     section
         div.bg-dark
-            include ./components/logo/index.pug
+            include components/logo/index.pug
         div
-            include ./components/logo/white.pug
+            include components/logo/white.pug
         div
-            include ./components/logo/large.pug
+            include components/logo/large.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) loading
     section
         div
-            include ./components/loading/index.pug
+            include components/loading/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) login
     section
-        include ./components/login/login.pug
+        include components/login/login.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 列表块
     section.clear
         .left
-            include ./components/blockItem/index.pug
+            include components/blockItem/index.pug
         .left
-            include ./components/blockItem/add.pug
+            include components/blockItem/add.pug
         .left(style="width: 386px;")
-            include ./components/blockItem/image.pug
+            include components/blockItem/image.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 按钮
     section
-        include ./components/button/index.pug
+        include components/button/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 分类项目
     section
-        include ./components/catItem/index.pug
+        include components/catItem/index.pug
     section.clear(style="margin-left: -20px; margin-top: -10px;")
         .left(style="margin-left:20px; margin-top: 10px")
-            include ./components/catItem/s.pug
+            include components/catItem/s.pug
         .left
-            include ./components/catItem/s.pug
+            include components/catItem/s.pug
         .left
-            include ./components/catItem/s.pug
+            include components/catItem/s.pug
         .left
-            include ./components/catItem/s.pug
+            include components/catItem/s.pug
         .left
-            include ./components/catItem/s.pug
+            include components/catItem/s.pug
     h3(id="id-"+x)
         a(href="#id-"+x) 内容
     section
-        include ./components/content/index.pug
+        include components/content/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 页脚
     section
-        include ./components/footer/index.pug
+        include components/footer/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 表单
     section
-        include ./components/form/index.pug
+        include components/form/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 图标
     section
-        include ./components/icon/index.pug
+        include components/icon/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 链接
     section
-        include ./components/link/index.pug
+        include components/link/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 列表
     section
         .box
-            include ./components/list/index.pug
+            include components/list/index.pug
         .box
-            include ./components/list/post.pug
+            include components/list/post.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 分类菜单
     section
-        include ./components/menu/catMenu.pug
+        include components/menu/catMenu.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 菜单
     section
-        include ./components/menu/index.pug
+        include components/menu/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 模态弹窗
     section
-        include ./components/modal/index.pug
+        include components/modal/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 导航
     section
-        include ./components/nav/index.pug
+        include components/nav/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 分页
     section
-        include ./components/pager/index.pug
+        include components/pager/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 二维码
     section
         div(style="width: 160px")
-            include ./components/qrcode/index.pug
+            include components/qrcode/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 新闻页
     section
-        include ./components/single/index.pug
+        include components/single/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 表格
     section
-        include ./components/table/index.pug
+        include components/table/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 标签
     section
-        include ./components/tabs/index.pug
+        include components/tabs/index.pug
     - ++x
     h3(id="id-"+x)
         a(href="#id-"+x) 标题
     section
-        include ./components/title/index.pug
+        include components/title/index.pug

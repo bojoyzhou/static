@@ -1,6 +1,7 @@
 .postItem {
     border: #e6e6e6 solid 1px;
     padding: 20px;
+    position: relative;
     .title {
         font-size: 20px;
     }
@@ -12,5 +13,35 @@
         .point{
             cursor: pointer;
         }
+    }
+    .control{
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        margin-top: -12px;
+        .btn{
+            border-radius: 16px;
+            padding: 8px 15px;
+            display: block;
+        }
+        .add{
+            &:before{
+                content: '+';
+                font-size: 20px;
+                display: block;
+                float: left;
+                height: 20px;
+                line-height: 20px;
+                margin-top: -1px;
+            }
+        }
+        .cancel{
+            background: #66aa33;
+            border-color: #66aa33;
+            color: #fff;
+        }
+    }
+    .content{
+        padding-right: 130px;
     }
 }

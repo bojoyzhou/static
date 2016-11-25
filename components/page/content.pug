@@ -1,16 +1,15 @@
 extends ../../layout.pug
 block style
     link(rel="stylesheet", href="../../all.css")
-
 block content
     include ../nav/index.pug
     div.clear(style="box-sizing: border-box; padding-top: 60px; margin-top: -60px;min-height:100%")
-        div.left(style="width: 100%;")
-            div(style="margin-left: 200px;")
+        div.left(style="width: 100%; background: #666;")
+            div(style="margin-left: 200px; background: #fff;")
                 div
                     include ../filterbar/index.pug
                 div(style="padding: 0 20px;")
-                    ul(style="margin-top: 20px;").list
+                    ul(style="margin-top: 20px;").list.clear
                         li(style="margin-bottom: 20px;").list-item
                             include ../postItem/index.pug
                         li(style="margin-bottom: 20px;").list-item
@@ -116,28 +115,28 @@ block content
             var old = document.body.scrollTop
             var toff = -offset
             window.addEventListener('scroll', function(e){
-                var ret = document.body.scrollTop - old
-                old = document.body.scrollTop
-                console.log(ret, toff)
-                ret = ret || toff
-                if(ret > 0){
-                    if(document.body.scrollTop > 60 + offset){
-                        mc.style.position= 'fixed'
-                        mc.style.top= -offset + 'px'
-                    }
-                    toff = -offset
-                }else if(ret < 0){
-                    if(document.body.scrollTop <= 60){
-                        mc.style.position= 'static'
-                    }else{
-                        toff -= ret
-                        if(toff >= 0){
-                            mc.style.top= '0px'
-                            mc.style.position= 'fixed'
-                        }else{
-                            mc.style.top= toff + 'px'
-                        }
-                    }
-                }
+                //- var ret = document.body.scrollTop - old
+                //- old = document.body.scrollTop
+                //- console.log(ret, toff)
+                //- ret = ret || toff
+                //- if(ret > 0){
+                //-     if(document.body.scrollTop > 60 + offset){
+                //-         mc.style.position= 'fixed'
+                //-         mc.style.top= -offset + 'px'
+                //-     }
+                //-     toff = -offset
+                //- }else if(ret < 0){
+                //-     if(document.body.scrollTop <= 60){
+                //-         mc.style.position= 'static'
+                //-     }else{
+                //-         toff -= ret
+                //-         if(toff >= 0){
+                //-             mc.style.top= '0px'
+                //-             mc.style.position= 'fixed'
+                //-         }else{
+                //-             mc.style.top= toff + 'px'
+                //-         }
+                //-     }
+                //- }
             })
         })()
