@@ -1,7 +1,4 @@
 .welcome {
-    width: 1000px;
-    margin: 0 auto;
-
     .intro {
         margin-top: 75px;
     }
@@ -151,7 +148,9 @@
         border: #e6e6e6 solid 1px;
     }
     .user-list {
-        margin-top: 80px;
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 40px;
     }
     .user-list>.title {
         font-size: 24px;
@@ -181,37 +180,66 @@
     .user-list .wrap .item {
         float: left;
         width: 318px;
-        height: 240px;
+        height: 245px;
         border: #e6e6e6 solid 1px;
-        margin-right: 20px;
         color: #999999;
         font-size: 14px;
         box-sizing: border-box;
         padding-right: 6px;
         padding-top: 15px;
+        border-radius: 5px;
+        & + & {
+            margin-left: 20px
+        }
     }
-    .user-list .wrap .item:last-child {
-        margin: 0;
+    .user-list .wrap .item + .item{
+        margin-left: 20px
     }
     .user-list .wrap .item img {
         float: left;
-        margin: 20px;
-        width: 90px;
-        height: 90px;
+        margin: 0 10px;
+        width: 72px;
+        height: 72px;
         border-radius: 45px;
-        margin-left: 10px;
-        margin-top: 0;
     }
     .user-list h4 {
         padding: 0;
         margin: 0;
         line-height: 36px;
         font-size: 16px;
+        color: #646464;
     }
     .user-list .item p {
-        width: 190px;
+        width: 218px;
         float: right;
-        line-height: 2;
+        line-height: 1.6;
+        margin-top: 3px;
+    }
+    .bg{
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .bg1{
+        height: 582px;
+        background-image: url(/images/index_1.png)
+    }
+    .bg2{
+        height: 582px;
+        background-image: url(/images/index_2.png)
+    }
+    .bg3{
+        height: 582px;
+        background-image: url(/images/index_3.png)
+    }
+    .bg4{
+        height: 583px;
+        background-image: url(/images/index_4.png)
+    }
+    .hr{
+        width: 1000px;
+        margin: 0 auto;
+        height: 50px;
+        background-color: #f6f6f6;
     }
     footer {
         margin-top: 160px;

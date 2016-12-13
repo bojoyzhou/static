@@ -3,14 +3,25 @@ block style
     link(rel="stylesheet", href="../../all.css")
 
 block content
-    .w100(style="height: 600px;position: relative;text-align: center")
-        .pos-a(style="left: 50%;margin-left:-500px;top: 25px;")
-            include ../logo/index.pug
-        div(style="margin-left:50%;")
-            include ../nav/welcome.pug
+    .w100(style="height: 650px;position: relative;text-align: center;")
+        div(style="background:url(/images/header_bg.png) repeat-x;height:85px;")
+            .pos-a(style="left: 60px;margin-top:20px")
+                include ../logo/index.pug
+            .pos-a(style="right: 40px")
+                include ../nav/welcome.pug
         .w100.h100.pos-a(style="top: 0;z-index: -1;")
             include ../banner/index.pug
-        a.pos-a.btn.btn-primary(style="top: 400px;left: 50%; margin-left: -70px;") 免费注册&gt;&gt;
+        a.pos-a.btn(style="background-color: #e14a36; border: #deada3 solid 6px;border: rgba(223, 97, 80, .4) solid 6px;border-radius: 31px; bottom: 50px; color: #fff; line-height: 50px;left: 50%; margin-left: -220px;font-size:30px;padding:0 30px;background-clip: padding-box;letter-spacing:3px;") 免费试用
+        a.pos-a.btn(style="background: transparent;border: #e99185 solid 1px;border-radius: 26px;height: 50px;bottom: 54px;left: 50%; line-height: 50px; margin-left: 55px;font-size:28px;padding:0 30px;letter-spacing:3px;") 登录
+        a.pos-a.btn(style="background-color: #df6150; border-radius: 31px; bottom: 54px; color: #fff; line-height: 50px;left: 50%; margin-left: -125px;font-size:30px;padding:0 30px") 进入72助手
+            img(src="/images/gonext.jpg", style="float:right;margin-top: 8px;")
+
     include ../welcome/index.pug
+    div(style="width:1000px;margin:0 auto;background:#df6150;text-align:center;color:white; padding: 60px 0 50px; margin-top:35px;letter-spacing: 2px;")
+        h1 提高运营效率 节约运营成本!
+        div(style="width: 425px;margin:20px auto 0;height:1px;background:#fff;")
+        h2(style="background:#df6150; width: 160px; margin: 0 auto; margin-top: -14px; margin-bottom: 25px;font-weight:normal;line-height:24px") 欢迎加入我们
+        a.btn(style="background: #fff;border: #e99185 solid 8px;border-radius: 38px;height: 76px; padding: 16px 27px;display:inline-block;letter-spacing:3px;font-size: 28px;line-height: 28px") 免费试用
+        a.btn(style="background: #fff;border: #e99185 solid 8px;border-radius: 38px;height: 76px; padding: 16px 27px;display:inline-block;letter-spacing:3px;font-size: 28px;line-height: 28px") 进入72助手
     .w100(style="margin-top:20px")
         include ../footer/index.pug

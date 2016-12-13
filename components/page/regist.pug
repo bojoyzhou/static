@@ -9,11 +9,8 @@ block content
             .pos-a.w100.h100(style="background-color:rgba(0,0,0,0.4);z-index:1")
             .w100.h100.table.pos-r(style="z-index:2;")
                 .table-v
-                    .flex.clear(style="width: 840px; margin: 0 auto; background-color: #fff; border-radius: 10px;")
-                        .left.table(style="padding: 60px; box-sizing: border-box; border-radius: 10px; background-color: #fff; width: 480px;")
-                            div.table-v(style="border-right: #e6e6e6 solid 1px;padding-right:20px;")
-                                include ../login/regist.pug
-                        div(style="display: flex; flex-direction: column; justify-content: center;")
-                            include ../logo/large.pug
+                    .table(style="margin: 0 auto; padding: 60px; box-sizing: border-box; border-radius: 10px; background-color: #fff; width: 480px;")
+                        div.table-v
+                            include ../login/regist.pug
     div
         include ../footer/index.pug

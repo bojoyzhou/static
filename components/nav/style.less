@@ -1,9 +1,14 @@
-nav.nav {
+.nav {
     background-color: #333;
     color: #fff;
     min-width: 660px;
     position: relative;
-
+    .h-logo{
+        left: 20px;
+        img{
+            margin-top: 12px;
+        }
+    }
     .logo, .logoall {
         float: left;
         width: 200px;
@@ -14,9 +19,13 @@ nav.nav {
         padding: 0;
         margin: 0 auto;
         width: 240px;
+        zoom:1;
 
         &:after {
-            display: table;
+            display: block;
+            width: 0;
+            height: 0;
+            visibility:hidden;
             content: " ";
             clear: both;
         }
@@ -42,8 +51,6 @@ nav.nav {
             display: block;
         }
         &.active, &:hover {
-            background: #FA9B5B;
-
             .desc {
                 display: block;
             }
@@ -51,6 +58,12 @@ nav.nav {
                 width: 32px;
                 height: 32px;
             }
+        }
+        &:hover{
+            background: rgba(221, 98, 84, 0.8);
+        }
+        &.active{
+            background: #dd6254;
         }
     }
     .userinfo {
@@ -67,17 +80,36 @@ nav.nav {
         }
     }
 }
-nav.nav-index {
+.nav-index {
     position: relative;
     width: 100%;
 
+    .userinfo {
+        float: right;
+        height: 60px;
+        color: #fff;
+        line-height: 60px;
+        padding-right: 20px;
+        position: relative;
+
+        .icon {
+            display: inline-block;
+            margin-top: 14px;
+            margin-left: -31px;
+            position: absolute;
+        }
+    }
     .list-group {
         list-style: none;
         padding: 0;
         margin: 0 auto;
+        zoom:1;
 
         &:after {
-            display: table;
+            display: block;
+            width: 0;
+            height: 0;
+            visibility:hidden;
             content: " ";
             clear: both;
         }
@@ -85,8 +117,10 @@ nav.nav-index {
     .list-group-item {
         list-style: none;
         float: left;
-        margin-right: 30px;
-        height: 100px;
+        height: 45px;
+    }
+    .list-group-item + .list-group-item{
+        margin-left: 30px;
     }
     .list-group-link {
         display: block;
@@ -108,11 +142,11 @@ nav.nav-index {
             left: 50%;
             width: 0;
             margin-left: -60%;
-            transition: .2s;
+            // transition: .2s;
         }
         &:hover:before, &:active:before {
-            margin-left: -30%;
-            width: 60%;
+            margin-left: -7%;
+            width: 15%;
         }
     }
     .wrap {
@@ -121,10 +155,15 @@ nav.nav-index {
     }
     .rwrap {
         position: relative;
-        margin-top: 38px;
+        margin-top: 15px;
+        zoom:1;
     }
+
     .clear:after, .rwrap:after {
-        display: table;
+        display: block;
+        width: 0;
+        height: 0;
+        visibility:hidden;
         content: " ";
         clear: both;
     }

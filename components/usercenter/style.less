@@ -1,0 +1,88 @@
+.usercenter {
+    .line {
+        line-height: 45px;
+        padding: 22.5px 0;
+        color: #575757;
+        border-bottom: #e6e6e6 solid 1px;
+        &:last-child{
+            border-bottom: none;
+        }
+
+        .us-l__field {
+            display: inline-block;
+            width: 105px;
+            padding-right: 35px;
+            color: #b4b4b4;
+            text-align: justify;
+            text-justify: distribute-all-lines;
+            text-align-last: justify;
+            -moz-text-align-last: justify;
+            -webkit-text-align-last: justify;
+        }
+        .us-l__num{
+            margin-left: 20px;
+            text-decoration: underline;
+        }
+    }
+}
+
+.usercenter-mod-pass{
+    width: 510px;
+    margin: 0 auto;
+    .title{
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+        &:before, &:after{
+            display: block;
+            position: absolute;
+            content: ' ';
+            height: 1px;
+            width: 210px;
+            background: #e6e6e6;
+            top: 17px;
+        }
+        &:before{
+            left: 0;
+        }
+        &:after{
+            right: 0;
+        }
+    }
+    .ump-line{
+        padding: 25px 0;
+        line-height: 40px;
+        .ump-line__label{
+            display: inline-block;
+            width: 115px;
+            color: #b4b4b4;;
+            text-align: right;
+        }
+        .ump-line__field{
+            height: 40px;
+            line-height: 40px;
+            width: 360px;
+            border: #dcdcdc solid 1px;
+            border-radius: 3px;
+            color: #575757;
+            padding-left: 10px;
+            font-size: 16px;
+            &::-webkit-input-placeholder{
+                color: #c7c7c7;
+            }
+        }
+        .ump-line__confirm{
+            height: 40px;
+            padding: 0;
+            width: 373px;
+            margin: 25px auto 0;
+        }
+        .ump-line__error{
+            display: block;
+            margin-left: 115px;
+            font-size: 12px;
+            line-height: 20px;
+            color: #f00;
+        }
+    }
+}
