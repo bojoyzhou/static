@@ -1993,3 +1993,228 @@ table td {
   line-height: 20px;
   color: #f00;
 }
+.feedback {
+  width: 570px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.76);
+  font-size: 14px;
+}
+.feedback .center-block {
+  width: 400px;
+}
+.feedback-title {
+  height: 130px;
+  text-align: center;
+  position: relative;
+}
+.feedback-title hr {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.54);
+  top: 58px;
+  width: 100%;
+  z-index: -1;
+}
+.feedback-title .title {
+  font-size: 22px;
+  line-height: 130px;
+  background-color: #fff;
+  padding: 0 10px;
+}
+.feedback-blue {
+  color: #64c7eb;
+}
+.feedback-line {
+  padding: 15px 0;
+  line-height: 40px;
+}
+.feedback-line-hint {
+  padding-top: 3px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+}
+.feedback-line-tail {
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  color: rgba(0, 0, 0, 0.54);
+  padding-left: 20px;
+  font-size: 12px;
+}
+.feedback-line.compact {
+  padding-bottom: 5px;
+}
+.feedback-line.compact + .feedback-line.compact {
+  padding-top: 5px;
+}
+.feedback-line.compact:last-child {
+  padding-bottom: 15px;
+}
+.feedback-label {
+  width: 95px;
+  display: inline-block;
+  vertical-align: top;
+}
+.feedback-radio-group {
+  display: inline-block;
+}
+.feedback-radio {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+}
+.feedback-radio-input {
+  display: none;
+}
+.feedback-radio-icon {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  background-image: url('/images/radio_unchecked.png');
+}
+.feedback-radio-input:checked + .feedback-radio-icon {
+  background-image: url('/images/radio_checked.png');
+}
+.feedback-radio-name {
+  padding-left: 8px;
+  vertical-align: top;
+}
+.feedback-textarea {
+  display: inline-block;
+}
+.feedback-textarea textarea {
+  width: 100%;
+  height: 220px;
+  resize: none;
+  display: block;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.feedback-input {
+  display: inline-block;
+  position: relative;
+}
+.feedback-input input {
+  padding-left: 42px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
+}
+.feedback-icon-qq,
+.feedback-icon-wechat {
+  position: absolute;
+  left: 1px;
+  top: 2px;
+}
+.feedback-icon-qq {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  background: url(/images/qq.png);
+  background-position: -1px -1px;
+}
+.feedback-icon-wechat {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  background: url(/images/wechat.png);
+  background-position: -1px -1px;
+}
+.feedback-btn {
+  display: inline-block;
+  width: 400px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #e1614e;
+  color: #fff;
+  cursor: pointer;
+}
+.feedback-btn:hover {
+  background: rgba(225, 97, 78, 0.9);
+}
+.feedback-btn:active {
+  background: #d73c25;
+}
+.sended {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.sended tbody {
+  padding: 10px;
+}
+.sended-header {
+  box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.1);
+}
+.sended-header-th {
+  background-color: #fff;
+  border-radius: 0;
+  color: rgba(0, 0, 0, 0.76);
+  text-align: left;
+}
+.sended td {
+  padding: 15px 0 5px;
+  text-align: left;
+}
+.sended .scol-1 {
+  width: 220px;
+  padding-left: 10px;
+}
+.sended .scol-2 {
+  padding-left: 20px;
+  vertical-align: top;
+  text-align: left;
+}
+.sended .scol-4 {
+  line-height: 18px;
+}
+.sended .card {
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.1);
+}
+.sended .card-title {
+  font-size: 14px;
+  text-align: left;
+}
+.sended .card-cover {
+  width: 210px;
+  height: 120px;
+}
+.sended-hint {
+  color: rgba(0, 0, 0, 0.26);
+}
+.sended-hint:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+.sended-hint .date {
+  display: inline-block;
+  float: left;
+}
+.sended-hint .type {
+  display: inline-block;
+  float: right;
+}
+.sended-ul {
+  margin: 0;
+  padding: 0;
+}
+.sended-li {
+  list-style: none;
+  line-height: 18px;
+}
+.sended-success:after {
+  width: 14px;
+  height: 14px;
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(/images/send_success.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

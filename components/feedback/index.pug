@@ -1,0 +1,45 @@
+.feedback
+	.feedback-title 
+		hr
+		span.title 意见反馈
+	.feedback-line
+		.feedback-label 反馈界面：
+		.feedback-radio-group.center-block
+			label.feedback-radio
+				input.feedback-radio-input(type='radio', name="page", checked="true")
+				span.feedback-radio-icon
+				span.feedback-radio-name 工作台
+			label.feedback-radio
+				input.feedback-radio-input(type='radio', name="page")
+				span.feedback-radio-icon
+				span.feedback-radio-name 内容库
+			label.feedback-radio
+				input.feedback-radio-input(type='radio', name="page")
+				span.feedback-radio-icon
+				span.feedback-radio-name 管理中心
+		.feedback-line-tail （必填）
+	.feedback-line
+		.feedback-label 详细说明：
+		.feedback-textarea.center-block
+			textarea
+			.feedback-line-hint 还可输入
+				span.feedback-blue 500
+				| 个字符
+		.feedback-line-tail （必填）
+	.feedback-line.compact
+		.feedback-label 联系方式：
+		.feedback-input.center-block
+			input
+			span.feedback-icon-wechat
+		.feedback-line-tail （选填）
+	.feedback-line.compact
+		.feedback-label &nbsp;
+		.feedback-input.center-block
+			input
+			span.feedback-icon-qq
+			.feedback-line-hint 
+				span.feedback-blue （以便我们与您取得联系）
+		.feedback-line-tail （选填）
+	.feedback-line
+		.feedback-label &nbsp;
+		.feedback-btn.center-block 提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交

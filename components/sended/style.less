@@ -1,0 +1,87 @@
+.sended{
+	background-color: rgba(0, 0, 0, 0.03);
+	tbody{
+		padding: 10px;
+	}
+	&-header{
+		box-shadow: 0 1px 8px 2px rgba(0, 0, 0, .1);
+		&-th{
+			background-color: #fff;
+			border-radius: 0;
+			color: rgba(0, 0, 0, .76);
+			text-align: left;
+		}
+	}
+	td{
+		padding: 15px 0 5px;
+		text-align: left;
+	}
+	.scol-1{
+		width: 220px;
+		padding-left: 10px;
+	}
+	.scol-2{
+		padding-left: 20px;
+		vertical-align: top;
+		text-align: left;
+	}
+	.scol-3{
+		
+	}
+	.scol-4{
+		line-height: 18px;
+	}
+	.scol-5{
+		
+	}
+	.card{
+		padding: 5px;
+		background: #fff;
+		border-radius: 5px;
+		box-shadow: 0 1px 8px 2px rgba(0, 0, 0, .1);
+		&-title{
+			font-size: 14px;
+			text-align: left;
+		}
+		&-cover{
+			width: 210px;
+			height: 120px;
+		}
+	}
+	&-hint{
+		color: rgba(0, 0, 0, 0.26);
+		&:after{
+			content: ' ';
+			display: table;
+			clear: both;
+		}
+		.date{
+			display: inline-block;
+			float: left;
+		}
+		.type{
+			display: inline-block;
+			float: right;
+		}
+	}
+	&-ul{
+		margin: 0;
+		padding: 0;
+	}
+	&-li{
+		list-style: none;
+		line-height: 18px;
+	}
+	&-success{
+		&:after{
+			width: 14px;
+			height: 14px;
+			content: ' ';
+			display: inline-block;
+			vertical-align: middle;
+			background-image: url(/images/send_success.png);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+}
